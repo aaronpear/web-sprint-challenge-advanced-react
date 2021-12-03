@@ -116,10 +116,20 @@ test("displays plants in cart", () => {
 
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. Add your answers below.
 
-1. What are the main differences between a stateful and a functional component?
+1. What are the main differences between a class-based and a functional component?
 
-2. When does a componentWillMount function be called? What about a componentWillUpdate?
+The first main difference between the two components is in the name, in that one is
+structured as a class while the other is structured as a function. Besides that, the main differences between the components lie in their handling of state and lifecycles of components, where functional components are generally more streamlined in the handling of these parts of code.
+
+2. When does a componentDidMount function be called? What about a componentDidUpdate?
+
+componentDidMount is called as soon as a component is mounted to the DOM, and whenever any part of state in a component is updated, that is when componentDidUpdate will run.
 
 3. Define stateful logic.
 
+Stateful logic includes any piece of code that updates an app's data/state in any way.
+
 4. What are the three step of creating a successful test? What is done in each phase? 
+
+The three steps are arrange, act, and assert.
+We first "arrange" our test by setting up and rendering our component to the DOM. Then we "act" by grabbing the pieces from the DOM that we'd like to test using queries from the React testing library, and finally we "assert" what we expect our app to do and confirm that everything was executed and rendered correctly.
